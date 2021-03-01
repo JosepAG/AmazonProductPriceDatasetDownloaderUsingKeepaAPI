@@ -1,0 +1,36 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="bg-light" style="text-align: center; background-color: rgba(0, 0, 0, 0.1);">
+   
+<form action="Send_data" method="POST">
+     {% csrf_token %}
+    <div align="center" >
+    <input id="asin" class="input-lg form-control" type="text" width="48" name="asin" placeholder="Introduce ASIN" style="display:inline-block; width:200px">
+    <select name="website" class="input-lg form-control" width="48" style="display:inline-block; width:200px">
+
+        <option value="US">Amazon.com</option>
+        <option value="ES">Amazon.es</option>
+        <option value="GB">Amazon.co.uk</option>
+        <option value="DE">Amazon.de</option>
+        <option value="FR">Amazon.fr</option>
+        <option value="JP">Amazon.co.jp</option>
+        <option value="CA">Amazon.ca</option>
+        <option value="CN">Amazon.cn</option>
+        <option value="IT">Amazon.it</option>
+        <option value="IN">Amazon.in</option>
+        <option value="MX">Amazon.com.mx</option>
+
+</select>
+    </div>
+    <div img="1">Where can find ASIN of a product?<a href="https://www.youtube.com/watch?v=MQ5cICyBHGY">Answer</a></div>
+    <input type="submit" class="btn btn-primary" style="width:200px" name="Amazon" value="Amazon historical Prices">
+    <input type="submit" class="btn btn-primary" style="width:200px" name="External" value="External Amazon historical">
+</form>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+
+</head>
+
+<body style="">
+    
+
+   <nav class="navbar fixed-top navbar-expand-md navbar-white pt-5 pb-5" style="background-color: white !important;top:0px;bottom:0px"></nav>
+   <div class="jumbotron bg-light text-center" style="margin:0;margin-bottom:0px;top:0px;background-color: rgba(0, 0, 0, 0.1);bottom:0px">
+  <h1 style="font-family: 'Times New Roman', Times, serif;">Amazon historical price downloader</h1>
+  <p>Choose the product and data will download</p>
+   <hr class="my-4" style="border-top: 1px solid #ccc;">
+    </div>
+ 
+    
+{% block content %}{% endblock %}
+       
+       <footer class="bg-light text-center text-lg-start">
+           <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+            2021-Not comercial
+       </div>
+       </footer>
+      
+      
+
+        
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
