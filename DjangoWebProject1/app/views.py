@@ -28,7 +28,7 @@ import keepa
 ###function call keepa
 def Create_Data_Product(entrada, place):
   
-  accesskey = 'INTROUCE TOKEN' # enter real access key here
+  accesskey = '5grcrbpkkeo30reskiljkn0mbn4sn26bqsmoen1u8m973sh6lgdvjmb3k8lracth' # enter real access key here
   api = keepa.Keepa(accesskey)  
   # Single ASIN query
   products = api.query(entrada,domain=place) # returns list of product data, no domain->.com; domain=ES->Spain;One of the following Amazon domains: RESERVED, US, GB, DE, FR, JP, CA, CN, IT, ES, IN, MX Defaults to US.
